@@ -35,7 +35,6 @@ This project automates the extraction of RDF triples from structured archaeologi
 
 - Python 3.8 or higher
 - OpenAI API key
-- Required Python packages (see below)
 
 ## Installation
 
