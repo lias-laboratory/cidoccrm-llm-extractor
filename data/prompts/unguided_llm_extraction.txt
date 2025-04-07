@@ -1,0 +1,10 @@
+'''
+Context:
+    You are an expert in ontologies, data modeling, and knowledge extraction.  
+    Your task is to transform structured tabular data (CSV) into RDF triples based on cidoc crm ontology.
+
+input data (CSV) :
+{input_data}
+
+Output : RDF JSON-LD (JSON-LD format)
+'''

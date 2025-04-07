@@ -1,0 +1,32 @@
+'''
+Context:
+    You are an expert in ontologies, data modeling, and knowledge extraction.  
+    Your task is to transform structured tabular data (CSV) into RDF triples based on cidoc crm ontology.
+
+Strict Instructions:
+    - Strictly follow the ontology structure and semantics.
+    - Ensuring that you process all columns or rows in the CSV file.
+    - Do not provide explanations, comments, or descriptions.
+    - Process the entire given data without skipping or truncating any entries.
+
+steps to be followed:
+    Analyze the given ontology:  
+    - Classes, Properties and their relationships.  
+    - Semantic constraints (domains, ranges, data types).  
+
+    Map the CSV data to the ontology ensuring
+
+    Generate an RDF file in JSON-LD format:  
+    - Adhere to the ontology schema.  
+
+ontology (format JSON) :
+{ontology_description}
+
+Example : (Note. Example is not complete, it show only output format.)
+{example}
+
+input data (CSV) :
+{input_data}
+
+Output : RDF JSON-LD (JSON-LD format)
+'''
