@@ -121,5 +121,11 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 - Developed as part of the French ANR project Digitalis (ANR-22-CE38-0011-01).
 
+### Contributors
+
+- [Ali Hariri](https://www.lias-lab.fr/members/alihariri/), LIAS, ISAE-ENSMA
+- [Stéphane Jean](https://www.lias-lab.fr/members/stephanejean/), LIAS, University of Poitiers 
+- [Mickaël Baron](https://www.lias-lab.fr/members/mickaelbaron/), LIAS, ISAE-ENSMA
+
 For more information, visit the [project page](https://digitalis.humanities.science/).
 
