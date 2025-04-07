@@ -41,8 +41,8 @@ This project automates the extraction of RDF triples from structured archaeologi
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>/src
+   git clone https://github.com/lias-laboratory/cidoccrm-llm-extractor
+   cd cidoccrm-llm-extractor
    ```
 
 2. Install dependencies:
