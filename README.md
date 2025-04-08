@@ -20,7 +20,7 @@ Developed as part of the French ANR project Digitalis (ANR-22-CE38-0011-01). For
 The system supports multiple strategies for constructing prompts, each with varying levels of ontological guidance and model dependency:
 1. **Unguided LLM Extraction**: Relies solely on the LLM's prior knowledge without any explicit ontology input.
 2. **Full Ontology Prompting**: Injects the full CIDOC CRM ontology into the prompt, which can overwhelm the model.
-3. **Ontology Subset Prompting** (Best): Uses a carefully curated subset of the ontology tailored for archaeology. This strategy improves precision, recall, and competency question performance.
+3. **Ontology Subset Prompting** (Recommended): Uses a carefully curated subset of the ontology tailored for archaeology. This strategy improves precision, recall, and competency question performance.
 
 ## Ontologies
 
