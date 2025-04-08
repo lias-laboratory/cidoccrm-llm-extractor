@@ -2,12 +2,36 @@
 
 This project automates the extraction of RDF triples from structured archaeological data using large language models (LLMs) and the CIDOC CRM ontology. It aims to simplify the creation of archaeological knowledge graphs by integrating domain-specific knowledge with LLM prompting strategies.
 
+- **The input data used in this project is not included in the repository due to privacy, confidentiality, and legal restrictions.**
+
+Developed as part of the French ANR project Digitalis (ANR-22-CE38-0011-01). For more information, visit the [project page](https://digitalis.humanities.science/).
+
+
+
 ## Features
 
 - Automatically generates CIDOC CRM-compliant RDF triples from CSV files.
 - Implements three prompting strategies: Unguided, Full Ontology, and Ontology Subset.
 - Uses GPT-4 via OpenAI’s API for semantic mapping and RDF generation.
 - Optimized for archaeological datasets with interdisciplinary data.
+
+## Prompting Strategies
+
+1. **Unguided LLM Extraction**: Relies solely on the LLM's prior knowledge without any explicit ontology input.
+2. **Full Ontology Prompting**: Injects the full CIDOC CRM ontology into the prompt, which can overwhelm the model.
+3. **Ontology Subset Prompting** (Best): Uses a carefully curated subset of the ontology tailored for archaeology. This strategy improves precision, recall, and competency question performance.
+
+## Ontologies
+
+This project uses two versions of the CIDOC CRM ontology to guide or constrain the information extraction process:
+
+1. **`full_cidoc_crm.json`**  
+   This file contains the complete CIDOC CRM ontology in JSON format. It was sourced from the GitHub repository [LLM_Semantics by dingningpei](https://github.com/dingningpei/LLM_Semantics). It provides the full set of classes and properties defined by CIDOC CRM, allowing for rich and detailed semantic representation.
+
+2. **`subset_cidoc_crm.json`**  
+   This version was manually curated to include only the most relevant classes and properties for the specific use case of this project. It simplifies the ontology for more focused extraction and reduces processing overhead during prompt generation and reasoning.
+
+These ontology files are used primarily in the **ontology-guided extraction** mode to structure the prompts and to help the LLM generate semantically accurate RDF triples.
 
 ## Project Structure
 
@@ -30,6 +54,7 @@ This project automates the extraction of RDF triples from structured archaeologi
 └── requirements.txt                          Python dependencies for the project.
 
 ```
+
 
 ## Prerequisites
 
@@ -91,41 +116,13 @@ Based on your selection, the corresponding extraction function will be executed.
 
 The generated RDF triples will be saved in the paths specified under `SAVE_DIRS`.
 
-
-## Prompting Strategies
-
-1. **Unguided LLM Extraction**: Relies solely on the LLM's prior knowledge without any explicit ontology input.
-2. **Full Ontology Prompting**: Injects the full CIDOC CRM ontology into the prompt, which can overwhelm the model.
-3. **Ontology Subset Prompting** (Best): Uses a carefully curated subset of the ontology tailored for archaeology. This strategy improves precision, recall, and competency question performance.
-
-## Ontologies
-
-This project uses two versions of the CIDOC CRM ontology to guide or constrain the information extraction process:
-
-1. **`full_cidoc_crm.json`**  
-   This file contains the complete CIDOC CRM ontology in JSON format. It was sourced from the GitHub repository [LLM_Semantics by dingningpei](https://github.com/dingningpei/LLM_Semantics). It provides the full set of classes and properties defined by CIDOC CRM, allowing for rich and detailed semantic representation.
-
-2. **`subset_cidoc_crm.json`**  
-   This version was manually curated to include only the most relevant classes and properties for the specific use case of this project. It simplifies the ontology for more focused extraction and reduces processing overhead during prompt generation and reasoning.
-
-These ontology files are used primarily in the **ontology-guided extraction** mode to structure the prompts and to help the LLM generate semantically accurate RDF triples.
-
-## Data Availability
-The input data used in this project is not included in the repository due to privacy, confidentiality, and legal restrictions. 
-
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-## Acknowledgments
+## Historic Contributors (core developers first followed by alphabetical order)
 
-- Developed as part of the French ANR project Digitalis (ANR-22-CE38-0011-01).
-
-### Contributors
-
-- [Ali Hariri](https://www.lias-lab.fr/members/alihariri/), LIAS, ISAE-ENSMA
-- [Stéphane Jean](https://www.lias-lab.fr/members/stephanejean/), LIAS, University of Poitiers 
+- [Ali Hariri(core developer)](https://www.lias-lab.fr/members/alihariri/), LIAS, ISAE-ENSMA
 - [Mickaël Baron](https://www.lias-lab.fr/members/mickaelbaron/), LIAS, ISAE-ENSMA
-
-For more information, visit the [project page](https://digitalis.humanities.science/).
+- [Stéphane Jean](https://www.lias-lab.fr/members/stephanejean/), LIAS, University of Poitiers 
 
