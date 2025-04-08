@@ -2,11 +2,9 @@
 
 This project automates the extraction of RDF triples from structured archaeological data using large language models (LLMs) and the CIDOC CRM ontology. It aims to simplify the creation of archaeological knowledge graphs by integrating domain-specific knowledge with LLM prompting strategies.
 
-- **The input data used in this project is not included in the repository due to privacy, confidentiality, and legal restrictions.**
+**The input data used in this project is not included in the repository due to privacy, confidentiality, and legal restrictions.**
 
 Developed as part of the French ANR project Digitalis (ANR-22-CE38-0011-01). For more information, visit the [project page](https://digitalis.humanities.science/).
-
-
 
 ## Features
 
@@ -53,9 +51,7 @@ These ontology files are used primarily in the **ontology-guided extraction** mo
 │   └── unguided_llm_extraction.txt
 ├── README.md                                 Project overview and instructions.
 └── requirements.txt                          Python dependencies for the project.
-
 ```
-
 
 ## Prerequisites
 
