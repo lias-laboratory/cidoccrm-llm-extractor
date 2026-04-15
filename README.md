@@ -113,6 +113,20 @@ Based on your selection, the corresponding extraction function will be executed.
 
 The generated RDF triples will be saved in the paths specified under `SAVE_DIRS`.
 
+## Citation
+
+If you use this software in your research, please cite:
+
+```bibtex
+@inproceedings{hariri2025dexa,
+  title     = {Towards Automating {RDF} Extraction for Archaeological Knowledge Graphs with {LLMs}},
+  author    = {Hariri, Ali and Jean, St{\'e}phane and Baron, Micka{\"e}l},
+  booktitle = {International Conference on Database and Expert Systems Applications (DEXA)},
+  pages     = {83--97},
+  year      = {2025}
+}
+```
+
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
